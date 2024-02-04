@@ -1,0 +1,37 @@
+#weather {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 2fr;
+  background-color: rgba(255, 255, 255, 0.027);
+  width: 60%;
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* search section */
+
+.title {
+  color: rgb(241, 241, 241);
+}
+.search {
+  width: 245px;
+  height: 35px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  border-bottom: 2px solid rgb(60, 48, 53);
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 5px;
+  font-size: 18px;
+}
+#state {
+  color: white;
+  font-size: 30px;
+}
+.error-message {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}

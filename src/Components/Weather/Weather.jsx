@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./weather.css";
 import apiRequests from "../../services/Axios/Configs";
-import WeatherInfo from "../WeatherInfo/WeatherInfo";
+import WeatherDisplay from "../WeatherDisplay/WeatherDisplay";
+import Input from "../Input/Input";
 
 export default function Weather() {
   const [onSearch, setOnSearch] = useState("");
@@ -41,18 +42,15 @@ export default function Weather() {
     <div id="weather">
       <div>
         <h2 className="title">Weather in Your City / Country</h2>
-        <input
-          onChange={(event) => setOnSearch(event.target.value)}
-          value={onSearch}
-          className="search"
-          type="text"
-          maxLength="27"
-          onKeyUp={inputHandler}
+        <Input
+          onSearch={onSearch}
+          setOnSearch={setOnSearch}
+          inputHandler={inputHandler}
+          errorMessage={errorMessage}
         />
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
 
-      {weather && !errorMessage && <WeatherInfo weather={weather} />}
+      <WeatherDisplay weather={weather} errorMessage={errorMessage} />
     </div>
   );
 }

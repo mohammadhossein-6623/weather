@@ -1,0 +1,28 @@
+.aside-list {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 2fr;
+  background-color: rgba(14, 1, 1, 0.26);
+  width: 20%;
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.title-list {
+  color: rgba(228, 228, 228, 0.836);
+}
+.province {
+  background-color: rgba(228, 228, 228, 0.836);
+  margin-bottom: 2px;
+  text-align: start;
+  list-style-type: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.province:hover {
+  background-color: rgba(228, 228, 228, 0.918);
+}

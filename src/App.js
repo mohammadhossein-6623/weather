@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       {loading ? (
         <div className="loading">
-          <l-metronome size="45" speed="1.75" color="black"></l-metronome>
+          <l-metronome size="45" speed="1.75" color="#fff"></l-metronome>
         </div>
       ) : (
         <HomePage />

@@ -11,16 +11,18 @@ export default function ListComponent() {
   return (
     <aside className="aside-list">
       <h2 className="title-list">Cities of Iran</h2>
-      <div>
-        {provinces.map((province, index) => (
-          <li
-            key={index}
-            className="province"
-            onClick={() => handleProvinceClick(province)}
-          >
-            {province}
-          </li>
-        ))}
+      <div className="container-province">
+        <div className="content-province">
+          {provinces.map((province, index) => (
+            <li
+              key={index}
+              className="province"
+              onClick={() => handleProvinceClick(province)}
+            >
+              {province}
+            </li>
+          ))}
+        </div>
       </div>
     </aside>
   );

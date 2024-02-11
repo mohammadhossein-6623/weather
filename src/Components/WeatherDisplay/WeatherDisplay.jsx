@@ -1,4 +1,4 @@
-// WeatherDisplay.js
+// کامپوننت نمایش اطلاعات اب و هوا
 import React from "react";
 import WeatherInfo from "../WeatherInfo/WeatherInfo";
 

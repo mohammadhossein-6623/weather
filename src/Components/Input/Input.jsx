@@ -1,4 +1,4 @@
-// WeatherInput.js
+// فیلد ورودی اسم شهر یا کشور
 import React from "react";
 
 const Input = ({ onSearch, setOnSearch, inputHandler, errorMessage }) => {

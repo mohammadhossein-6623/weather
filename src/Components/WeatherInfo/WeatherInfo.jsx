@@ -1,3 +1,5 @@
+// کامپوننت دریافت اطلاعات اب و هوا
+
 import { memo } from "react";
 import DateComponent from "../Data/DateComponent";
 import "./weatherInfo.css";

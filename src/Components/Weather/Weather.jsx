@@ -1,3 +1,5 @@
+// کامپوننت اصلی نمایش اب و هوا
+
 import React, { useState } from "react";
 import "./weather.css";
 import useWeather from "../../Hooks/useWeather";
@@ -11,7 +13,7 @@ export default function Weather() {
   const inputHandler = (event) => {
     if (event.key === "Enter") {
       getWeatherData(onSearch);
-      setOnSearch(""); // Move this inside the custom hook
+      setOnSearch("");
     }
   };
 

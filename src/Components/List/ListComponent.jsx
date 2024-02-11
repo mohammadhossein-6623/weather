@@ -1,3 +1,5 @@
+// لیست شهرهای منتخب
+
 import "./list.css";
 import { provinces } from "../Data/DateComponent";
 import { useState } from "react";

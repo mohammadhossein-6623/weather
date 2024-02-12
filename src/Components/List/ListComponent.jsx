@@ -1,15 +1,10 @@
 import { provinces } from "../../Data/Citys";
 import "./list.css";
 
-export default function ListComponent({
-  errorMessage,
-  setCity,
-  city,
-  listHandler,
-}) {
+export default function ListComponent({ setCity, city, listHandler }) {
   const handleCityClick = (cityName) => {
-    setCity(cityName); // تنظیم کردن نام شهر در استیت city
-    listHandler(cityName); // فراخوانی متد listHandler با نام شهر مورد نظر
+    setCity(cityName);
+    listHandler(cityName);
   };
   console.log(city);
 
@@ -28,7 +23,6 @@ export default function ListComponent({
             </li>
           ))}
         </div>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </aside>
   );

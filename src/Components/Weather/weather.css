@@ -1,10 +1,15 @@
+.container-weather {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 80%;
+  height: 90%;
+}
 #weather {
   display: grid;
   text-align: center;
   grid-template-rows: 1fr 2fr;
   background-color: rgba(255, 255, 255, 0.027);
-  width: 60%;
-  height: 80%;
+  height: 90%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 25px;
   padding: 10px;

@@ -1,8 +1,9 @@
 // کامپوننت دریافت اطلاعات اب و هوا
 
 import { memo } from "react";
-import DateComponent from "../Data/DateComponent";
 import "./weatherInfo.css";
+
+import DateComponents from "../../Data/Date";
 
 const WeatherInfo = memo(({ weather }) => {
   return (
@@ -11,7 +12,7 @@ const WeatherInfo = memo(({ weather }) => {
         <div className="city">
           {weather.name},{weather.sys.country}
         </div>
-        <div className="date">{<DateComponent />}</div>
+        <div className="date">{<DateComponents />}</div>
       </section>
       <div className="temp">
         {Math.floor(weather.main.temp - 273.15)}

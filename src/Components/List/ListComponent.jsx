@@ -1,15 +1,18 @@
-// لیست شهرهای منتخب
-
+import { provinces } from "../../Data/Citys";
 import "./list.css";
-import { provinces } from "../Data/DateComponent";
-import { useState } from "react";
-export default function ListComponent() {
-  const [selectedProvince, setSelectedProvince] = useState(null);
-  console.log(selectedProvince);
 
-  const handleProvinceClick = (province) => {
-    setSelectedProvince(province);
+export default function ListComponent({
+  errorMessage,
+  setCity,
+  city,
+  listHandler,
+}) {
+  const handleCityClick = (cityName) => {
+    setCity(cityName); // تنظیم کردن نام شهر در استیت city
+    listHandler(cityName); // فراخوانی متد listHandler با نام شهر مورد نظر
   };
+  console.log(city);
+
   return (
     <aside className="aside-list">
       <h2 className="title-list">Cities of Iran</h2>
@@ -19,12 +22,13 @@ export default function ListComponent() {
             <li
               key={index}
               className="province"
-              onClick={() => handleProvinceClick(province)}
+              onClick={() => handleCityClick(province)}
             >
               {province}
             </li>
           ))}
         </div>
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </aside>
   );

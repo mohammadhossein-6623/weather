@@ -26,8 +26,11 @@ const useWeather = () => {
       console.error("Error fetching weather data:", error);
     }
   };
+  const updateCity = (newCityName) => {
+    getWeatherData(newCityName);
+  };
 
-  return { weather, errorMessage, getWeatherData };
+  return { weather, errorMessage, getWeatherData, updateCity };
 };
 
 export default useWeather;

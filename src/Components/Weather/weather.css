@@ -1,9 +1,19 @@
-.container-weather {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  width: 80%;
-  height: 90%;
+@media (max-width: 565px) {
+  .container-weather {
+    display: grid;
+    height: 100%;
+    width: 90%;
+  }
 }
+@media (min-width: 565px) {
+  .container-weather {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    width: 80%;
+    height: 90%;
+  }
+}
+
 #weather {
   display: grid;
   text-align: center;
